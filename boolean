@@ -1,0 +1,3 @@
+   boolean allMatch = numbers.stream()
+                .allMatch(num -> num % 2 == 0);
+        System.out.println("All Match: " + allMatch);
