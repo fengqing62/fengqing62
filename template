@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+#define N 20
+​
+template <class T>
+T inner_product(T& a, T& b)
+{
+    return a * b;
+}
+​
+void test()
+{
+    int a[N],b[N];
+    int n;
+    int Count = 0;
+————————————————
