@@ -1,0 +1,14 @@
+bool eraser(const K& key)
+		{
+			HashDate<K, V>* tmp = Find(key);
+			if (tmp)
+			{
+				tmp->_state = DELETE;
+				--_n;
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
