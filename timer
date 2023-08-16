@@ -1,0 +1,37 @@
+int main()
+{
+   // test();
+
+    init();
+
+    int timer;
+    while (1)
+    {
+        
+ 
+        keyEvent();
+        
+      timer += getDelay();
+        
+        if(timer > 30)
+        {
+            timer = 0;           
+            updata = true;			
+      
+        }
+       
+        if(updata)
+        {
+         BeginBatchDraw(); 
+        updataBg();
+        putimagePNG2(heroX, heroY,                            &imgHeros[heroIndex]);
+        FlushBatchDraw();
+     
+        fly();
+        }
+        //Sleep(20);
+
+    }
+    return 0;
+}
+
